@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixe Programas para Windows Completos</title>
+    <meta name="description" content="Baixe os melhores programas para Windows, incluindo Adobe Acrobat, Photoshop, AutoCAD, CorelDRAW, Microsoft Office e mais. Downloads rápidos e seguros.">
+    <meta name="keywords" content="download programas Windows, baixar software, Adobe Acrobat, Photoshop, AutoCAD, CorelDRAW, Microsoft Office, VMware, Windows 11, Wondershare Filmora">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://baixetudopcwindows.github.io/clubewin/index.html">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .folder {
+            cursor: pointer;
+            margin-left: 20px;
+        }
+        .file {
+            margin-left: 40px;
+            display: none;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+        .status {
+            font-size: small;
+            color: green;
+        }
+        #search {
+            margin: 20px 20px 20px 40px; /* Ajuste de margem para alinhar a busca à esquerda */
+        }
+        #searchInput {
+            width: 50%; /* Torna a caixa de busca maior */
+            padding: 10px; /* Adiciona mais espaço interno */
+            font-size: 16px; /* Aumenta o tamanho da fonte */
+            border: 1px solid #ccc; /* Adiciona uma borda */
+            border-radius: 5px; /* Bordas arredondadas */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+        }
+        
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            color: #0078d7; /* Azul característico da Microsoft */
+            background: #f1f1f1; /* Fundo cinza claro para destacar */
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        function downloadFile(url) {
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = url.split('/').pop();
+            link.target = '_blank'; // Abre o link em uma nova aba
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function toggleFolder(folderId) {
+            var folder = document.getElementById(folderId);
+            if (folder.style.display === "none") {
+                folder.style.display = "block";
+            } else {
+                folder.style.display = "none";
+            }
+        }
+
+        function searchFiles() {
+            var input = document.getElementById('searchInput');
+            var filter = input.value.toLowerCase();
+            var folders = document.getElementsByClassName('folder');
+
+            for (var i = 0; i < folders.length; i++) {
+                var folder = folders[i];
+                var text = folder.textContent || folder.innerText;
+
+                if (text.toLowerCase().indexOf(filter) > -1) {
+                    folder.style.display = "";
+                } else {
+                    folder.style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2><span class="status">🟢 </span>BAIXE PROGRAMAS COMPLETOS PARA WINDOWS <span class="status"> 🟢</span></h2>
+    <div id="search">
+        <input type="text" id="searchInput" onkeyup="searchFiles()" placeholder="Procure seu programa..." />
+    </div>
+    <br><br>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Adobe Acrobat Pro DC 2024.004.20272 Win.txt')">
+        📁 Adobe Acrobat Pro DC 2024.004.20272 Win
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Adobe Photoshop 2025 v26.0 Multilíngue x64.txt')">
+        📁 Adobe Photoshop 2025 v26.0 Multilíngue x64
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Autodesk AutoCAD 2025.1.1 Windows.txt')">
+        📁 Autodesk AutoCAD 2025.1.1 Windows
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/CorelDRAW Graphics Suite 2024 25.2.1.313 Multilíngue x64.txt')">
+        📁 CorelDRAW Graphics Suite 2024 25.2.1.313 Multilíngue x64
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/CyberLink YouCam 10.1.4704.0 x64.txt')">
+        📁 CyberLink YouCam 10.1.4704.0 x64
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Microsoft 365 (Office 365) ProPlus Version 2410 x64 Windows.txt')">
+        📁 Microsoft Office365 Pro Plus Version 2410x64_Windows
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Microsoft Office Professional Plus 2024 VL 2408 Build 17932.20162.txt')">
+        📁 Microsoft Office Professional Plus 2024
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/VMware Workstation Pro 17.6.1.24319023 Win.txt')">
+        📁 VMware Workstation Pro 17.6.1.24319023 Win
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Windows 11 Pro 24H2 Build 26100.1742 Final (sem necessidade de TPM) pré-ativado multilíngue x64.txt)">
+        📁 Windows 11 Enterprise 24H2 Build 26100.1742 Final (sem necessidade de TPM) pré-ativado multilíngue x64
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/windows 11.txt')">
+        📁 Windows 11 Pro 24H2 Build 26100.1742 Final (sem necessidade de TPM) pré-ativado multilíngue x64
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Wondershare Filmora X 14.0.11.9772 x64 Multilíngue + Effects Pack.txt')">
+        📁 Wondershare Filmora X 14.0.11.9772 x64 Multilíngue + Effects Pack
+    </div>
+</body>
+</html>
