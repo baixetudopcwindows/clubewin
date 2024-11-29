@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Acesso</title>
+    <script>
+        // Recupera o token da URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const token = urlParams.get('token');
+        
+        // Exibe o token no console para depuração
+        console.log("Token recebido: " + token);
+
+        // Define o token esperado
+        const expectedToken = 'seuTokenUnico'; // Altere para o token desejado
+
+        // Verifica se o token corresponde ao esperado
+        if (token === expectedToken) {
+            document.body.innerHTML = "<h1>Acesso permitido</h1>"; // Exibe mensagem de sucesso
+        } else {
+            document.body.innerHTML = "<h1>Acesso não permitido</h1>"; // Exibe mensagem de erro
+        }
+    </script>
+</head>
+<body>
+    <h2>Verificando o token...</h2>
+</body>
+</html>
