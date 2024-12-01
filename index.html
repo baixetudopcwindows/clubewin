@@ -54,9 +54,13 @@
         }
     </style>
     <script>
+        function addVersion(url) {
+            return url + "?v=" + new Date().getTime();
+        }
+
         function downloadFile(url) {
             const link = document.createElement('a');
-            link.href = url;
+            link.href = addVersion(url);
             link.download = url.split('/').pop();
             link.target = '_blank'; // Abre o link em uma nova aba
             document.body.appendChild(link);
@@ -89,6 +93,21 @@
                 }
             }
         }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Adiciona versões aos arquivos estáticos principais
+            const links = document.getElementsByTagName('link');
+            for (let i = 0; i < links.length; i++) {
+                links[i].href = addVersion(links[i].href);
+            }
+
+            const scripts = document.getElementsByTagName('script');
+            for (let i = 0; i < scripts.length; i++) {
+                if (!scripts[i].src.includes('addVersion')) {
+                    scripts[i].src = addVersion(scripts[i].src);
+                }
+            }
+        });
     </script>
 </head>
 <body>
@@ -197,6 +216,41 @@
     </div>
     <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Epubor Ultimate Converter 3.0.16.296 Win Multilingual.txt')">
         📁 Epubor Ultimate Converter 3.0.16.296 Win Multilingual
+    </div>
+	
+	
+	<!-- -------------------------- 4 ETAPA -->
+	
+	
+	<div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Any Video Downloader Pro 9.1.0.txt')">
+        📁 Any Video Downloader Pro 9.1.0.txt
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Ashampoo UnInstaller 15.00.22.txt')">
+        📁 Ashampoo UnInstaller 15.00.22
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Camtasia 2024 v24.1.3.5321 Win.txt')">
+        📁 Camtasia 2024 v24.1.3.5321 Win
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/CareUEyes Pro 2.4.6 Multilingual.txt')">
+        📁 CareUEyes Pro 2.4.6 Multilingual
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/CyberLink PowerDirector Ultimate 2025 v23.0.1113.0 x64 Multilingual.txt')">
+        📁 CyberLink PowerDirector Ultimate 2025 v23.0.1113.0 x64 Multilingual
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Internet Download Manager (IDM) 6.42 Build 25 + Portable.txt')">
+        📁 Internet Download Manager (IDM) 6.42 Build 25 + Portable
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/PDQ Inventory 19.4.16.0 Enterprise.txt')">
+        📁 PDQ Inventory 19.4.16.0 Enterprise
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Sante DICOM Viewer Pro 14.0.15.txt')">
+        📁 Sante DICOM Viewer Pro 14.0.15
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Windows 10 22H2 build 19045.5131 Business Edition novembro 2024 MSDN x64.txt)">
+        📁 Windows 10 22H2 build 19045.5131 Business Edition novembro 2024 MSDN x64
+    </div>
+    <div class="folder" onclick="downloadFile('https://baixetudopcwindows.github.io/clubewin/Wondershare UniConverter 16.0.2.72 Win Multilingual.txt')">
+        📁 Wondershare UniConverter 16.0.2.72 Win Multilingual
     </div>
     
 </body>
